@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lesson_1/screens/detail_screen.dart';
+import 'package:lesson_1/screens/booking_screen.dart';
 import 'package:lesson_1/screens/home_screen.dart';
+import 'package:lesson_1/screens/result_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,8 @@ class MyApp extends StatelessWidget {
       routes: {
         HomeScreen.id: (context) => const HomeScreen(),
         DetailScreen.id: (context) => const DetailScreen(),
-        // /home_screen: HomeScreen()
+        BookingScreen.id: (context) => const BookingScreen(),
+        ResultScreen.id: (context) => const ResultScreen(),
       },
     );
   }
