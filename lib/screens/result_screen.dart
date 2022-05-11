@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ResultScreen extends StatefulWidget {
-  static const id = "/second_screen";
+  static const id = "/result_screen";
   const ResultScreen({Key? key}) : super(key: key);
 
   @override

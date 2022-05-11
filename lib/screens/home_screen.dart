@@ -16,9 +16,17 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Center(
         child: MaterialButton(
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => const DetailScreen()));
+            // I method a:
+            // Navigator.push(context, MaterialPageRoute(builder: (context) => const DetailScreen()));
+            // I method b:
+            // Navigator.of(context).push(MaterialPageRoute(builder: (context) => const DetailScreen()));
+
+            // II method a:
+            // Navigator.pushNamed(context, DetailScreen.id);
+            // II method b:
+            Navigator.of(context).pushNamed(DetailScreen.id);
           },
-          child: Text("DetailPage"),
+          child: Text("Stadion 1"),
           color: Colors.blueAccent,
           textColor: Colors.white,
         ),

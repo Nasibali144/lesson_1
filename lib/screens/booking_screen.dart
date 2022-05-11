@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BookingScreen extends StatefulWidget {
-  static const id = "/first_screen";
+  static const id = "/booking_screen";
   const BookingScreen({Key? key}) : super(key: key);
 
   @override
